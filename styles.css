@@ -14,6 +14,14 @@ body {
     margin: 0 auto;
     padding: 20px;
   }
+  .container1{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   
   header {
     background-color: #1e1e1e;
@@ -76,7 +84,12 @@ body {
     height: 215px;
     border-radius: 10px;
     border: black solid 4px;
+    position: relative;
+    left: 475px;
 }  
+#intro-body{
+    text-align: center;
+}
 a img{
     height: 95px;
     width: 95px;
@@ -125,7 +138,7 @@ bottom: 55px;
   input,
 textarea {
   width: 100%;
-  padding: 8px;
+  padding: 4px;
   margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -159,4 +172,10 @@ iframe{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
 }
