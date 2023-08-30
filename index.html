@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Hyrum's Developer Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1>Hyrum Van Slyke's Portfolio</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#languages">Languages and Tools</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me:</h2>
+      <img id="my-face"src="./imgs/myface.PNG" alt="Picture of Hyrum Van Slyke">
+      <p> introduction and background information go here.</p>
+    </div>
+  </section>
+  
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects:</h2>
+      <div class="project">
+        <a id="posti-link" href="https://hello-posti.onrender.com/">
+            <h1 id="posti1"> Hello!</h1>
+            <h3 id="posti2">Posti</h3>
+        </a>
+        <p id="Helloposti-details">I built out a web application in order to help people store their notes and items they had to do that day. I was able to accomplish this through the use of JavaScript, HTML, css, axios, express, postgresSQL, and sequelize.</p>
+        <div class="iframe-cont">
+          <iframe src="https://drive.google.com/file/d/12oF6BRkTZPYQp5xLO3AR-jL2PKSq4Pvj/preview"  allow="autoplay"></iframe>
+        </div>
+      </div>
+      <!-- <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of Project 2.</p>
+      </div> -->
+      <!-- Add more project entries as needed -->
+    </div>
+  </section>
+  <section id="languages" class="section">
+    <div class="container">
+        <h2 align="left">Languages and Tools:</h2>
+        <p align="left"> 
+            
+        <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
+            
+        <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> 
+        
+        <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> 
+        
+        <!-- <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a>  -->
+        
+        <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
+        
+        <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
+        
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+        
+        <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> 
+        
+        <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> 
+        
+        <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> 
+        
+        <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> 
+        
+        <!-- <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>  -->
+        
+        <!-- <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a>  -->
+        
+        <!-- <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a>  -->
+        
+        <!-- <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a>  -->
+    </p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="section">
+    <div class="container2">
+      <h2>Contact Me:</h2>
+      <form id="emailForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+  
+        <label for="body">Body:</label>
+        <textarea id="body" name="body" required></textarea>
+  
+        <button type="submit">Send Email</button>
+        <a class="links" href="https://github.com/hyrumvanslyke" target="_blank" rel="noreferrer"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" width="30" height="30"/> </a> 
+        <a class="links" href="https://www.linkedin.com/in/hyrum-van-slyke/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="linkedin" width="30" height="30"/> </a> 
+        <a class="links" href="https://www.instagram.com/hyrumvanslyke/" target="_blank" rel="noreferrer"> <img src="https://img.freepik.com/premium-vector/purple-gradiend-social-media-logo_197792-1883.jpg?w=2000" alt="instagram" width="30" height="30"/> </a>
+      </form>
+    </div>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
