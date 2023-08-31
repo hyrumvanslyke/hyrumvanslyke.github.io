@@ -15,17 +15,41 @@ document.addEventListener("DOMContentLoaded", function() {
       })
     })
   })
-  document.getElementById("emailForm").addEventListener("submit", function(event) {
-    event.preventDefault()
+  const contactForm = document.querySelector("#emailForm")
+  const submitBtn = document.querySelector(".submit-btn")
+  const nameInput = document.querySelector("#name")
+  const emailInput = document.querySelector("#email")
+  const phoneInput  = document.querySelector("#phone")
+  const messageInput = document.querySelector("#message")
+
+  const publicKey = "YNLw3yYHoUV0QVbwX"
+  const serviceId = "service_sixgxhu"
+  const templateId = "template_w2l5w8u"
   
-    const name = document.getElementById("name").value
-    const subject = document.getElementById("subject").value
-    const body = document.getElementById("body").value
-  
-    const emailContent = `Name: ${name}\nSubject: ${subject}\nBody: ${body}`
-    const mailtoLink = `mailto:hyrumevanslyke@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`
-  
-    window.location.href = mailtoLink
+  emailjs.init(publicKey)
+
+  contactForm.addEventListener("submit", e =>{
+    e.preventDefault()
+
+    submitBtn.innerText = "Just A Moment..."
+
+    const inputFields = {
+        name: nameInput.value,
+        email: emailInput.value,
+        phone: phoneInput.value,
+        message: messageInput.value
+    }
+
+    emailjs.send(serviceId, templateId, inputFields)
+    .then(() =>{
+        submitBtn.innerText = "Message Sent Successfully"
+
+        nameInput.value =''
+        emailInput.value =''
+        phoneInput.value =''
+        messageInput.value =''
+    }, (error) =>{
+        console.log(error)
+        submitBtn.innerText = "Something Went Wrong"
+    })
   })
-  
-  

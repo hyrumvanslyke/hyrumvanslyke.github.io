@@ -117,17 +117,20 @@
   <section id="contact" class="section" align="center">
     <div class="container2" align="center">
       <h2>Contact Me:</h2>
-      <form id="emailForm">
+      <form onsubmit="sendEmail(); reset(); return false;" id="emailForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" placeholder="Your name" required>
   
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required>
+        <label for="email">Email address:</label>
+        <input type="email" id="email" placeholder="Email address" required>
+        
+        <label for="phone-number">Phone Number:</label>
+        <input type="text" id="phone" placeholder="Phone number" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Write your reason for contact here" required></textarea>
   
-        <label for="body">Body:</label>
-        <textarea id="body" name="body" required></textarea>
-  
-        <button type="submit">Send Email</button>
+        <button type="submit" class="submit-btn">Send Email</button>
         <a class="links" href="https://github.com/hyrumvanslyke" target="_blank" rel="noreferrer"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" width="30" height="30"/> </a> 
         <a class="links" href="https://www.linkedin.com/in/hyrum-van-slyke/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="linkedin" width="30" height="30"/> </a> 
         <a class="links" href="https://www.instagram.com/hyrumvanslyke/" target="_blank" rel="noreferrer"> <img src="https://img.freepik.com/premium-vector/purple-gradiend-social-media-logo_197792-1883.jpg?w=2000" alt="instagram" width="30" height="30"/> </a>
@@ -135,5 +138,14 @@
     </div>
   </section>
   <script src="index.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("YNLw3yYHoUV0QVbwX");
+})();
+</script>
+  </script>
 </body>
 </html>
