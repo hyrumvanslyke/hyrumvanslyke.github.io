@@ -22,7 +22,7 @@
   </header>
   
   <section id="about" class="section">
-    <div class="container">
+    <div id="about-cont"class="container">
       <h2>About Me:</h2>
       <img id="my-face"src="./imgs/myface.PNG" alt="Picture of Hyrum Van Slyke">
       <p id="intro-body"> 👋 Welcome to my portfolio! My name is Hyrum Van Slyke and I'm thrilled to introduce myself as a dedicated and skilled Full Stack Web Developer, proficient in a wide array of essential technologies that power the modern web. <br>
@@ -117,7 +117,7 @@
   <section id="contact" class="section" align="center">
     <div class="container2" align="center">
       <h2>Contact Me:</h2>
-      <form onsubmit="sendEmail(); reset(); return false;" id="emailForm">
+      <form id="emailForm">
         <label for="name">Name:</label>
         <input type="text" id="name" placeholder="Your name" required>
   
@@ -137,7 +137,6 @@
       </form>
     </div>
   </section>
-  <script src="index.js"></script>
   <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
@@ -147,5 +146,6 @@ emailjs.init("YNLw3yYHoUV0QVbwX");
 })();
 </script>
   </script>
+  <script src="index.js"></script>
 </body>
 </html>

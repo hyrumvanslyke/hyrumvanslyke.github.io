@@ -85,7 +85,7 @@ body {
     border-radius: 10px;
     border: black solid 4px;
     position: relative;
-    left: 475px;
+    margin: 0 auto;
 }  
 #intro-body{
     text-align: center;
@@ -178,4 +178,15 @@ iframe{
     display: flex;
     justify-content: center;
     
+}
+#about{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+#about-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
